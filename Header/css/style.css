@@ -431,6 +431,9 @@ body .inAdditionInformation .sitesBox a {
   aside li {
     padding: 15px;
   }
+  aside i {
+    color: transparent;
+  }
   section.section {
     padding: 35px 35px 10px 35px;
     float: right;
@@ -533,6 +536,10 @@ body .inAdditionInformation .sitesBox a {
   }
   .aside {
     display: none;
+  }
+  .aside a {
+    text-decoration: none;
+    color: azure;
   }
   .aside .fa-close {
     font-size: 30px;

@@ -48,10 +48,22 @@ function aside() {
     })
 }
 
+function goToPages() {
+    const boshSahifa = document.querySelector('#boshSahifa')
+    const loyihalar = document.querySelector('#loyihalar')
+    const kodlar = document.querySelector('#kodlar')
+    const aloqa = document.querySelector('#aloqa')
+    const xizmat = document.querySelector('#xizmat')
+
+    aloqa.addEventListener('click', () => {
+        window.location.href = "/Aloqa Page/index.html";
+    })
+}
 // Already All Funtions
 function startFunctions() {
     // screenDarkMode()
     aside()
     colorTxt()
+    goToPages()
 }
 startFunctions()

@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    border-bottom: 1px solid silver;
+    color: rgba(0, 0, 0, 0.542);
+    box-shadow: 0 5px 5px 1px gray;
+    background: linear-gradient(to top, gray, azure);
+}
+.container {
+    display: grid;
+}
+.contact-left {
+    background: aqua;
+    padding: 15px;
+}
+.contact-right {
+    background: salmon;
+    padding: 15px;
+}
+.container .col {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+.col .fluid {
+    display: grid;
+    gap: 20px;
+    margin-top: 15px;
+}
+.col .fluid .box {
+    display: flex;
+    gap: 5px;
+}
+input, textarea, button, select, option {
+    padding: 5px;
+    cursor: pointer;
+    border: 1.5px solid gold;
+    border-radius: 10px;
+    background: transparent;
+    transition: 0.9s ease;
+}
+input:hover {
+    border-color: lime;
+    background: rgba(0, 255, 0, 0.505);
+}
+textarea:hover {
+    border-color: lime;
+    background: rgba(0, 255, 0, 0.505);
+}
+select:hover {
+    border-color: lime;
+    background: rgba(0, 255, 0, 0.505);
+}
+textarea {
+    resize: none;
+}
+button {
+    width: 100%;
+    position: relative;
+    transition: 0.9s ease;
+    font-weight: 500;
+}
+button:hover {
+    border: 2px dashed lime;
+    background: green;
+    letter-spacing: 5px;
+}
+
+@media (min-width:1048px){
+    body {
+        padding: 50px;
+    }
+    h1 {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-left {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .contact-right {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .col .fluid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .col .fluid .box {
+        flex-direction: column;
+    }
+    button {
+        font-size: 16px;
+        margin-top: 50px;
+    }
+}
+@media (max-width:1047.99px){
+    body {
+        padding: 50px;
+    }
+    h1 {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-left {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .contact-right {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .col .fluid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .col .fluid .box {
+        flex-direction: column;
+    }
+    button {
+        font-size: 15px;
+        margin-top: 50px;
+    }
+}
+@media (max-width:728px){
+    body {
+        padding: 30px;
+    }
+    h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-left {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .contact-right {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .col .fluid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .col .fluid .box {
+        flex-direction: column;
+    }
+    button {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+}
+@media (max-width:448px){
+    body {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-left {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .contact-right {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .col .fluid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .col .fluid .box {
+        flex-direction: column;
+    }
+    button {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+}
+
+span {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 18px;
+}
+span a {
+    text-decoration: none;
+    color: red;
+}
